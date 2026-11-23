@@ -2,6 +2,10 @@
 
 Three options keep Anthropic Claude as the model that answers the user. The fourth switches to an OpenAI model so Foundry can enforce guardrails on the deployment that generates the answer. **Options 2a and 2b are runnable proofs of concept**; options 1 and 3 are architecture choices.
 
+![Architecture of the four guardrail options: where the prompt and the answer are checked, and what happens when a check fails](docs/architecture.png)
+
+[View the diagram as scalable SVG](docs/architecture.svg).
+
 ## Side-by-side comparison
 
 | Decision criterion | 1. Onyx AI Gateway | 2a. OpenAI validation agent | 2b. Azure AI Language | 3. Native Foundry guardrails |
