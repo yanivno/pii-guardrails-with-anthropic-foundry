@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/2a-openai-validator/.venv/bin/python",
+    "python.analysis.extraPaths": ["2a-openai-validator"],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": ["-v", "-s", "./2a-openai-validator", "-p", "test_*.py"]
+}
