@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1100" viewBox="0 0 1480 1100" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1330" viewBox="0 0 1480 1330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
 <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#374151"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C62828"/></marker></defs>
-<rect width="1480" height="1100" fill="#FFFFFF"/>
+<rect width="1480" height="1330" fill="#FFFFFF"/>
 <text x="40" y="52" font-size="28" font-weight="700" fill="#111827">Guardrail options for Claude in Microsoft Foundry</text>
 <text x="40" y="82" font-size="15" fill="#4B5563">Each row shows where the prompt and the answer are checked. Red paths show what happens when a check fails.</text>
 <rect x="40" y="124" width="44" height="32" rx="8" fill="#111827"/>
@@ -109,45 +109,81 @@
 <text x="1112.0" y="744" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Answer withheld</text>
 <line x1="40" y1="788" x2="1440" y2="788" stroke="#E5E7EB"/>
 <rect x="40" y="814" width="44" height="32" rx="8" fill="#111827"/>
-<text x="62" y="836" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
-<text x="96" y="837" font-size="18" font-weight="700" fill="#111827" text-anchor="start">Native Foundry guardrails</text>
-<text x="40" y="866" font-size="13" font-weight="400" fill="#4B5563" text-anchor="start">Switch to an OpenAI model;</text>
-<text x="40" y="884" font-size="13" font-weight="400" fill="#4B5563" text-anchor="start">filters run on its deployment</text>
-<rect x="40" y="900" width="286.40000000000003" height="26" rx="13" fill="#F3F4F6" stroke="#9CA3AF"/>
-<text x="183.20000000000002" y="918" font-size="12" font-weight="600" fill="#4B5563" text-anchor="middle">Architecture option (replaces Claude)</text>
+<text x="62" y="836" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">2c</text>
+<text x="96" y="837" font-size="18" font-weight="700" fill="#111827" text-anchor="start">Azure AI Content Safety</text>
+<text x="40" y="866" font-size="13" font-weight="400" fill="#4B5563" text-anchor="start">App screens for attacks and</text>
+<text x="40" y="884" font-size="13" font-weight="400" fill="#4B5563" text-anchor="start">harmful content (+ optional PII)</text>
+<rect x="40" y="900" width="243.2" height="26" rx="13" fill="#E8F6EF" stroke="#14915F"/>
+<text x="161.6" y="918" font-size="12" font-weight="600" fill="#14915F" text-anchor="middle">Implemented: 2c-content-safety/</text>
 <rect x="350" y="820" width="180" height="92" rx="12" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
 <text x="440.0" y="850" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">User / App</text>
-<text x="440.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Calls the model</text>
-<text x="440.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">directly</text>
-<rect x="574" y="820" width="180" height="92" rx="12" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
-<text x="664.0" y="850" font-size="15" font-weight="700" fill="#14915F" text-anchor="middle">Input filter</text>
-<text x="664.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Foundry guardrails</text>
-<text x="664.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">on the deployment</text>
-<line x1="534" y1="866.0" x2="570" y2="866.0" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
-<rect x="798" y="820" width="180" height="92" rx="12" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
-<text x="888.0" y="850" font-size="15" font-weight="700" fill="#14915F" text-anchor="middle">Azure OpenAI model</text>
-<text x="888.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Generates the answer</text>
-<text x="888.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">(instead of Claude)</text>
-<line x1="758" y1="866.0" x2="794" y2="866.0" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
-<rect x="1022" y="820" width="180" height="92" rx="12" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
-<text x="1112.0" y="850" font-size="15" font-weight="700" fill="#14915F" text-anchor="middle">Output filter</text>
-<text x="1112.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Foundry guardrails</text>
-<text x="1112.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">on the deployment</text>
-<line x1="982" y1="866.0" x2="1018" y2="866.0" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<text x="440.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">claude_content_</text>
+<text x="440.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">safety_guard.py</text>
+<rect x="574" y="820" width="180" height="92" rx="12" fill="#FFF4E5" stroke="#E8890C" stroke-width="2"/>
+<text x="664.0" y="850" font-size="15" font-weight="700" fill="#E8890C" text-anchor="middle">Content Safety</text>
+<text x="664.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Prompt Shields + harm</text>
+<text x="664.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">categories (+ PII)</text>
+<line x1="534" y1="866" x2="570" y2="866" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<rect x="798" y="820" width="180" height="92" rx="12" fill="#F1ECFB" stroke="#7C4DCC" stroke-width="2"/>
+<text x="888.0" y="850" font-size="15" font-weight="700" fill="#7C4DCC" text-anchor="middle">Claude</text>
+<text x="888.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Microsoft Foundry</text>
+<text x="888.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">(called only if clean)</text>
+<line x1="758" y1="866" x2="794" y2="866" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<rect x="1022" y="820" width="180" height="92" rx="12" fill="#FFF4E5" stroke="#E8890C" stroke-width="2"/>
+<text x="1112.0" y="850" font-size="15" font-weight="700" fill="#E8890C" text-anchor="middle">Content Safety</text>
+<text x="1112.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Harm + protected</text>
+<text x="1112.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">material (+ PII)</text>
+<line x1="982" y1="866" x2="1018" y2="866" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
 <rect x="1246" y="820" width="180" height="92" rx="12" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
 <text x="1336.0" y="850" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">Answer</text>
-<text x="1336.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Filtered by Foundry</text>
-<line x1="1206" y1="866.0" x2="1242" y2="866.0" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<text x="1336.0" y="874" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Released if clean;</text>
+<text x="1336.0" y="892" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">PII redacted if on</text>
+<line x1="1206" y1="866" x2="1242" y2="866" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
 <line x1="664.0" y1="914" x2="664.0" y2="952" stroke="#C62828" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#r)"/>
-<text x="664.0" y="974" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Prompt filtered</text>
+<text x="664.0" y="974" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Attack / harm / error: not sent</text>
 <line x1="1112.0" y1="914" x2="1112.0" y2="952" stroke="#C62828" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#r)"/>
-<text x="1112.0" y="974" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Completion filtered</text>
-<rect x="40" y="1052" width="22" height="18" rx="4" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
-<text x="72" y="1066" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Caller / result</text>
-<rect x="340" y="1052" width="22" height="18" rx="4" fill="#FFF4E5" stroke="#E8890C" stroke-width="2"/>
-<text x="372" y="1066" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Guardrail service</text>
-<rect x="640" y="1052" width="22" height="18" rx="4" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
-<text x="672" y="1066" font-size="13" font-weight="400" fill="#374151" text-anchor="start">OpenAI with Foundry guardrails</text>
-<rect x="940" y="1052" width="22" height="18" rx="4" fill="#F1ECFB" stroke="#7C4DCC" stroke-width="2"/>
-<text x="972" y="1066" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Claude model</text>
+<text x="1112.0" y="974" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Answer withheld</text>
+<line x1="40" y1="1018" x2="1440" y2="1018" stroke="#E5E7EB"/>
+<rect x="40" y="1044" width="44" height="32" rx="8" fill="#111827"/>
+<text x="62" y="1066" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="96" y="1067" font-size="18" font-weight="700" fill="#111827" text-anchor="start">Native Foundry guardrails</text>
+<text x="40" y="1096" font-size="13" font-weight="400" fill="#4B5563" text-anchor="start">Switch to an OpenAI model;</text>
+<text x="40" y="1114" font-size="13" font-weight="400" fill="#4B5563" text-anchor="start">filters run on its deployment</text>
+<rect x="40" y="1130" width="286.40000000000003" height="26" rx="13" fill="#F3F4F6" stroke="#9CA3AF"/>
+<text x="183.20000000000002" y="1148" font-size="12" font-weight="600" fill="#4B5563" text-anchor="middle">Architecture option (replaces Claude)</text>
+<rect x="350" y="1050" width="180" height="92" rx="12" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="440.0" y="1080" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">User / App</text>
+<text x="440.0" y="1104" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Calls the model</text>
+<text x="440.0" y="1122" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">directly</text>
+<rect x="574" y="1050" width="180" height="92" rx="12" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
+<text x="664.0" y="1080" font-size="15" font-weight="700" fill="#14915F" text-anchor="middle">Input filter</text>
+<text x="664.0" y="1104" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Foundry guardrails</text>
+<text x="664.0" y="1122" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">on the deployment</text>
+<line x1="534" y1="1096" x2="570" y2="1096" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<rect x="798" y="1050" width="180" height="92" rx="12" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
+<text x="888.0" y="1080" font-size="15" font-weight="700" fill="#14915F" text-anchor="middle">Azure OpenAI model</text>
+<text x="888.0" y="1104" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Generates the answer</text>
+<text x="888.0" y="1122" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">(instead of Claude)</text>
+<line x1="758" y1="1096" x2="794" y2="1096" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<rect x="1022" y="1050" width="180" height="92" rx="12" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
+<text x="1112.0" y="1080" font-size="15" font-weight="700" fill="#14915F" text-anchor="middle">Output filter</text>
+<text x="1112.0" y="1104" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Foundry guardrails</text>
+<text x="1112.0" y="1122" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">on the deployment</text>
+<line x1="982" y1="1096" x2="1018" y2="1096" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<rect x="1246" y="1050" width="180" height="92" rx="12" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="1336.0" y="1080" font-size="15" font-weight="700" fill="#111827" text-anchor="middle">Answer</text>
+<text x="1336.0" y="1104" font-size="12.5" font-weight="400" fill="#374151" text-anchor="middle">Filtered by Foundry</text>
+<line x1="1206" y1="1096" x2="1242" y2="1096" stroke="#374151" stroke-width="2" marker-end="url(#a)"/>
+<line x1="664.0" y1="1144" x2="664.0" y2="1182" stroke="#C62828" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#r)"/>
+<text x="664.0" y="1204" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Prompt filtered</text>
+<line x1="1112.0" y1="1144" x2="1112.0" y2="1182" stroke="#C62828" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#r)"/>
+<text x="1112.0" y="1204" font-size="13" font-weight="600" fill="#C62828" text-anchor="middle">✕ Completion filtered</text>
+<rect x="40" y="1282" width="22" height="18" rx="4" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="72" y="1296" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Caller / result</text>
+<rect x="340" y="1282" width="22" height="18" rx="4" fill="#FFF4E5" stroke="#E8890C" stroke-width="2"/>
+<text x="372" y="1296" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Guardrail service</text>
+<rect x="640" y="1282" width="22" height="18" rx="4" fill="#E8F6EF" stroke="#14915F" stroke-width="2"/>
+<text x="672" y="1296" font-size="13" font-weight="400" fill="#374151" text-anchor="start">OpenAI with Foundry guardrails</text>
+<rect x="940" y="1282" width="22" height="18" rx="4" fill="#F1ECFB" stroke="#7C4DCC" stroke-width="2"/>
+<text x="972" y="1296" font-size="13" font-weight="400" fill="#374151" text-anchor="start">Claude model</text>
 </svg>
